@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyPets - Register</title>
+</head>
+<body>
+    <h1>Create an OnlyPets Account</h1>
+    <p>Register to manage your pets and their care records.</p>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <p>Already have an account? Login feature coming soon.</p>
+</body>
+</html>
